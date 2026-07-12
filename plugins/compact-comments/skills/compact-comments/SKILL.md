@@ -173,9 +173,24 @@ Techniques:
    `/* */` — those are not comments; never edit inside a string literal.
 4. **Rewrite compress-targets** per the craft above, keeping all other bytes
    identical.
-5. **Preview first.** Before applying broadly, show the user a before/after diff
-   for the first file (or two) and get an OK. This is the safety gate.
-6. **Apply to the rest** once approved. Track a short per-file tally: comments
+5. **Preview, then offer explicit choices — never just ask "looks good?".** After
+   compacting the first file, show its before/after diff, then present a short
+   menu of concrete next actions (use AskUserQuestion when available; the tool's
+   "Other" stays open for free-form direction). Tailor the menu to what actually
+   changed this run, drawing from:
+   - **Approve** — keep this file's changes and, on a directory run, continue
+     applying the same way to the remaining files. Label it "Apply to the rest"
+     for a directory, "Keep it" for a single file.
+   - **Comments only from here** — undo the docstring / doc-comment changes (in
+     this file too) and continue compacting just real comments. Offer this only
+     if you actually touched docstrings.
+   - **Less aggressive** — keep more wording and leave borderline-short comments
+     alone; redo this file safer, then re-preview.
+   - **Revert & stop** — restore this file to its original bytes and abort the run.
+   - **Other** — let the user name a specific tweak (e.g. "keep JSDoc markup",
+     "leave the module header alone", "go even terser").
+   Act on their pick before touching anything else. This menu is the safety gate.
+6. **Apply to the rest** once they approve. Track a short per-file tally: comments
    compressed, comments skipped-as-functional, characters/lines saved.
 7. **Sanity-check.** Where a cheap parse check exists, run it to prove no code
    was corrupted — e.g. `python -m py_compile <f>`, `node --check <f>`,
