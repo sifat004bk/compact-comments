@@ -1,0 +1,10 @@
+{
+  "name": "compact-comments",
+  "description": "Compress code comments into single-line, lossless, agent-optimized notes while keeping code clean for humans.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sifat Ullah Chowdhury"
+  },
+  "keywords": ["comments", "code-quality", "compression", "agent"],
+  "license": "MIT"
+}
