@@ -1,7 +1,8 @@
 {
   "name": "sifat-skills",
   "owner": {
-    "name": "Sifat Ullah Chowdhury"
+    "name": "Sifat Ullah Chowdhury",
+    "email": "sif.sifat24@gmail.com"
   },
   "description": "Personal marketplace of Claude Code skills by Sifat Ullah Chowdhury.",
   "version": "1.0.0",
