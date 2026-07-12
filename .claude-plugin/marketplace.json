@@ -1,8 +1,7 @@
 {
   "name": "sifat-skills",
   "owner": {
-    "name": "Sifat Ullah Chowdhury",
-    "email": "REPLACE_WITH_YOUR_PUBLIC_EMAIL@example.com"
+    "name": "Sifat Ullah Chowdhury"
   },
   "description": "Personal marketplace of Claude Code skills by Sifat Ullah Chowdhury.",
   "version": "1.0.0",
@@ -10,15 +9,21 @@
     {
       "name": "compact-comments",
       "source": "./plugins/compact-comments",
-      "description": "Compress code comments into single-line, lossless, agent-optimized notes — collapse verbose or multi-line comments (and, when asked, docstrings/JSDoc) to the tersest form that still preserves every fact an AI agent needs, while keeping the surrounding code clean for humans.",
+      "description": "Compress code comments into single-line, lossless, agent-optimized notes \u2014 collapse verbose or multi-line comments (and, when asked, docstrings/JSDoc) to the tersest form that still preserves every fact an AI agent needs, while keeping the surrounding code clean for humans.",
       "version": "1.0.0",
       "author": {
         "name": "Sifat Ullah Chowdhury"
       },
-      "homepage": "https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/compact-comments",
-      "repository": "https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/compact-comments",
+      "homepage": "https://github.com/sifat004bk/compact-comments",
+      "repository": "https://github.com/sifat004bk/compact-comments",
       "license": "MIT",
-      "keywords": ["comments", "code-quality", "compression", "agent", "documentation"],
+      "keywords": [
+        "comments",
+        "code-quality",
+        "compression",
+        "agent",
+        "documentation"
+      ],
       "category": "development"
     }
   ]

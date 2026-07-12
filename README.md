@@ -18,7 +18,7 @@ commented-out code, license headers) byte-for-byte untouched.
 In Claude Code:
 
 ```
-/plugin marketplace add REPLACE_WITH_YOUR_GITHUB_USERNAME/compact-comments
+/plugin marketplace add sifat004bk/compact-comments
 /plugin install compact-comments@sifat-skills
 ```
 
