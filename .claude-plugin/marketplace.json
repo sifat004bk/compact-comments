@@ -15,8 +15,8 @@
       "author": {
         "name": "Sifat Ullah Chowdhury"
       },
-      "homepage": "https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/compact-comments-marketplace",
-      "repository": "https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/compact-comments-marketplace",
+      "homepage": "https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/compact-comments",
+      "repository": "https://github.com/REPLACE_WITH_YOUR_GITHUB_USERNAME/compact-comments",
       "license": "MIT",
       "keywords": ["comments", "code-quality", "compression", "agent", "documentation"],
       "category": "development"
